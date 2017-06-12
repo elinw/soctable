@@ -1,0 +1,21 @@
+Package: soctable
+Type: Package
+Title: A Simple Set of Functions to Make Cross Tab and Frequency Tables
+Version: 0.1.0
+Author: Elin Waring
+Maintainer: Elin Waring <elin.waring@gmail.com>
+Description: Simple, easy to build, easy to read tables focsuing on categorical and ordinal data.
+Depends:
+    R (>= 3.1.2)
+Imports:
+  pander
+Remotes: 
+Suggests:
+    testthat,
+    knitr,
+    rmarkdown
+License: GPL
+Encoding: UTF-8
+LazyData: true
+VignetteBuilder: knitr
+RoxygenNote: 6.0.1
