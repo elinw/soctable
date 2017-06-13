@@ -10,6 +10,10 @@
 \arguments{
 \item{x}{The object to be printed.}
 
+\item{...}{Other parameters to be passed in.}
+
+\item{digits}{Number of digists to display.}
+
 \item{quote}{indicates if the string values should be returned enclosed in quotation marks.}
 
 \item{right}{Is a logical indicating if the values should be right aligned.}
@@ -20,7 +24,7 @@
 This function controls printing for frequency_table objects. It is the
 same as print.data.frame except that row.names defaults to FALSE and
 right defaults to FALSE. It also adds a title if this
-was created when the frequencytable was created.
+was created when the frequency_table was created.
 }
 \keyword{count}
 \keyword{data}

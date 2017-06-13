@@ -5,18 +5,22 @@
 #' @param row.vars A single or vector of row variables, quoted.
 #' @param col.vars A single or vector of column variables, quoted
 #' @param format  "freq", "col_percent", "row_percent", "total_percent"
-#' @param useNa  "ifany", "no", "always"
+#' @param useNA  "ifany", "no", "always"
 #' @param title  string Title to be used for printing
 #' @param row.margin.format  "percent" to show row percents, "freq" to show row frequency, "none" for no margin
 #' @param col.margin.format "percent" to show percents, "freq" to show column frequencies, "none" for no margin
-#' @param vector Dimension names to replace the variable names.
-#' @param logical TRUE means to add linebreaks for printing with Pander or another package.
+#' @param dnames vector Dimension names to replace the variable names.
+#' @param pretty.print logical TRUE means to add linebreaks for printing with Pander or another package.
+#' @param row.margin Indicates whether or not row margins should be displayed.
 #' @keywords crosstab
 #' @export
 
-crosstab<-function(data, row.vars = "", col.vars = "",
-                    format = "freq", useNA = "ifany",
-                    title = "", row.margin = TRUE,
+crosstab<-function(data, row.vars = "",
+                    col.vars = "",
+                    format = "freq",
+                    useNA = "ifany",
+                    title = "",
+                    row.margin = TRUE,
                     row.margin.format = "none",
                     col.margin.format = "freq",
                     dnames = "",

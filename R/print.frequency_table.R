@@ -3,11 +3,13 @@
 #' This function controls printing for frequency_table objects. It is the
 #' same as print.data.frame except that row.names defaults to FALSE and
 #' right defaults to FALSE. It also adds a title if this
-#' was created when the frequencytable was created.
+#' was created when the frequency_table was created.
 #' @param x The object to be printed.
 #' @param row.names indicates if the row.names or numbers should be printed.
 #' @param right Is a logical indicating if the values should be right aligned.
 #' @param quote indicates if the string values should be returned enclosed in quotation marks.
+#' @param ...  Other parameters to be passed in.
+#' @param digits Number of digists to display.
 #' @keywords data frequency count percent
 #' @export
 

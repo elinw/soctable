@@ -18,17 +18,19 @@ crosstab(data, row.vars = "", col.vars = "", format = "freq",
 
 \item{format}{"freq", "col_percent", "row_percent", "total_percent"}
 
+\item{useNA}{"ifany", "no", "always"}
+
 \item{title}{string Title to be used for printing}
+
+\item{row.margin}{Indicates whether or not row margins should be displayed.}
 
 \item{row.margin.format}{"percent" to show row percents, "freq" to show row frequency, "none" for no margin}
 
 \item{col.margin.format}{"percent" to show percents, "freq" to show column frequencies, "none" for no margin}
 
-\item{useNa}{"ifany", "no", "always"}
+\item{dnames}{vector Dimension names to replace the variable names.}
 
-\item{vector}{Dimension names to replace the variable names.}
-
-\item{logical}{TRUE means to add linebreaks for printing with Pander or another package.}
+\item{pretty.print}{logical TRUE means to add linebreaks for printing with Pander or another package.}
 }
 \description{
 This function creates crosstabs in a flexible manner.

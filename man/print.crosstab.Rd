@@ -4,17 +4,21 @@
 \alias{print.crosstab}
 \title{Print crosstab results from crosstab()}
 \usage{
-\method{print}{crosstab}(ctab, ..., digits = NULL, quote = FALSE,
+\method{print}{crosstab}(x, ..., digits = NULL, quote = FALSE,
   right = FALSE, row.names = FALSE)
 }
 \arguments{
+\item{x}{The object to be printed.}
+
+\item{...}{optional arguments.}
+
+\item{digits}{Number of digits to display.}
+
 \item{quote}{indicates if the string values should be returned enclosed in quotation marks.}
 
 \item{right}{Is a logical indicating if the values should be right aligned.}
 
 \item{row.names}{indicates if the row.names or numbers should be printed.}
-
-\item{x}{The object to be printed.}
 }
 \description{
 This function controls printing for class crosstab. It is the
